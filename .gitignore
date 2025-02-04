@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+cocktail_book.puml
+cocktailbook-api-spec.yaml
