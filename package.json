@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host=0.0.0.0",
     "build": "ng build",
     "build:production": "ng build --configuration ",
     "watch": "ng build --watch --configuration development",
@@ -19,6 +19,11 @@
     "@angular/platform-browser": "^19.1.0",
     "@angular/platform-browser-dynamic": "^19.1.0",
     "@angular/router": "^19.1.0",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@ngrx/effects": "^19.0.1",
+    "@ngrx/store": "^19.0.1",
+    "@ngrx/store-devtools": "^19.0.1",
+    "bootstrap": "^5.3.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

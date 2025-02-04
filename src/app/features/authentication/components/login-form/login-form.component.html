@@ -1,0 +1,37 @@
+<form (ngSubmit)="onLogin()" [formGroup]="loginForm">
+  <div class="mb-3">
+    <label class="form-label"
+           for="usernameInput">
+      Username
+    </label>
+    <input [class.border-danger]="isError()"
+           autocomplete="username"
+           class="form-control"
+           formControlName="username"
+           id="usernameInput"
+           type="text"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label"
+           for="passwordInput">
+      Password
+    </label>
+    <input [class.border-danger]="isError()"
+           autocomplete="current-password"
+           class="form-control"
+           formControlName="password"
+           id="passwordInput"
+           type="password"/>
+  </div>
+  <button [class.btn-primary]="loginForm.valid"
+          [class.btn-secondary]="loginForm.invalid"
+          [disabled]="loginForm.invalid || isLoading()"
+          class="btn form-control position-relative"
+          type="submit">
+    Login
+  </button>
+</form>
+
+<p class="text-center mt-2">
+  Don't have an account? <a routerLink="../register">Register</a>
+</p>

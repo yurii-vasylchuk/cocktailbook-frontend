@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-md border-bottom border-body">
+  <div class="container-fluid">
+    <span class="navbar-brand">Cocktail Book</span>
+
+    <button aria-controls="navbar__routes" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-bs-target="#navbar__routes" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar__routes">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link icon-link" routerLink="/home">
+            <i class="fa-solid fa-whiskey-glass"></i>
+            Головна
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link icon-link" routerLink="/ingredients">
+            <i class="fa-solid fa-list-check"></i>
+            Інгредієнти
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link icon-link" routerLink="/recipes">
+            <i class="fa-solid fa-book"></i>
+            Рецепти
+          </a>
+        </li>
+      </ul>
+      <button (click)="logout.emit()" class="btn btn-primary">Logout</button>
+    </div>
+
+  </div>
+</nav>
